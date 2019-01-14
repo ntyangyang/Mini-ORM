@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<orm-factory>
+    <!--数据库连接数据-->
+    <property name="connection.url">jdbc:mysql://192.168.199.201:3306/console_ucenter?characterEncoding=utf-8&amp;useSSL=false</property>
+    <property name="connection.driverClass">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">Yy.521710</property>
+
+    <!--采用xml配置映射数据-->
+    <mapping resource="com/eason/orm/test/entity/User.mapper.xml"/>
+    <!--采用实体类注解配置映射数据-->
+    <entity package="com.eason.orm.test.entity"/>
+</orm-factory>
